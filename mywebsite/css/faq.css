@@ -15,28 +15,28 @@ nav a{
 	color: #F96C4D;
 }
 body{
-	background-color: rgba(200,200,200,0.9);}
+	font-size: 18px;	
+}
 main{
-	padding: 0 20%;
+	padding: 0 15px;
 }
 main #inner{
-	padding: 5%;
 	background-color: white;
 }
-
 h1{
 	font-family: Arial;
 	text-align: center;
 }
 img{
-	display: block;
 	margin: 10px auto;
-	width: 50%;
-	height: auto;
+	display: block;
+	width: 100%;
+	height: auto;	
 }
 h2{
 	font-family: sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.2em;
+	text-align: center;
 }
 p{
 	margin: 5px 0;
@@ -63,4 +63,26 @@ p{
 }
 .reponse p .repondants::after{
 	content: ": "
+}
+
+@media screen and (min-width:700px){
+	body{
+		background-color: rgba(200,200,200,0.9);
+		font-size: 16px;
+	}
+	main{
+		padding: 0 20%;
+	}
+	main #inner{
+		padding: 5%;
+		background-color: white;
+	}
+	img{
+		margin: 10px auto;
+		width: 50%;
+		height: auto;
+	}
+	h2{
+		text-align: left;
+	}
 }
