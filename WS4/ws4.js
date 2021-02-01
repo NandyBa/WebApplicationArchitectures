@@ -9,12 +9,19 @@ $boderEndColor		=	document.getElementById("boderEndColor");
 
 $bgEndColor			=	document.getElementById("bgEndColor");
 
-// Get animation colors
+$startButton		=	document.getElementById("start");
 
-border_start_color	=	$borderColor.value;
+// Animation
 
-bg_start_color		=	$bgColor.value;
+$startButton.onclick = function(){
+	// Get animation colors
 
-border_end_color	=	$boderEndColor.value;
+	border_start_color	=	$borderColor.value;
 
-bg_end_color		=	$bgEndColor.value;
+	bg_start_color		=	$bgColor.value;
+
+	border_end_color	=	$boderEndColor.value;
+
+	bg_end_color		=	$bgEndColor.value;
+
+}
