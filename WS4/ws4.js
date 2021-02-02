@@ -13,6 +13,8 @@ $startButton		=	document.getElementById("start");
 
 $zoomButton			=	document.getElementById("zoom");
 
+$pauseButton		=	document.getElementById("pause");
+
 // Animation
 // get div to must be animate
 $tobeanimated		=	document.getElementById("tobeanimated");
@@ -55,4 +57,13 @@ $startButton.onclick = function(){
 
 $zoomButton.onclick = function(){
 	$tobeanimated.style.setProperty("animation", getComputedStyle($tobeanimated).animation+', scaleAnimation 5s linear');
+}
+
+$pauseButton.onclick = function(){
+	if ($tobeanimated.style.animationPlayState === "paused") {
+		$tobeanimated.style.animationPlayState = "running";
+	} else {
+		$tobeanimated.style.animationPlayState = "paused";
+	}
+
 }
